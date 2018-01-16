@@ -1,5 +1,6 @@
 package tw.com.shiaoshia.ex2018011503;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,4 +30,10 @@ public class MainActivity extends AppCompatActivity {
         TextView tv = (TextView)findViewById(R.id.textView);
         tv.setText(str);
     }
+
+    public void click03(View v) {
+        Intent it = new Intent(MainActivity.this,SettingsActivity.class);
+        startActivity(it);
+    }
+
 }
